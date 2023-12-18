@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link
+      href="{{ url_for('static', filename='main.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <title>M*dutek Systems</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top bg-light">
+      <div class="container-fluid">
+        <h1>m*dutek systems</h1>
+        <!-- <img src="/images/logo-removebg-preview.png" id="vjnl-logo" height="75px" width="325px" style="padding-left: 10px;"> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kitchen">Kitchen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#living">Living Room</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bedroom">Bedroom</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#office">Office</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#institute">Institute</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#success">Success</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#enquiry">Enquiry</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 id="about" class="text-center"></h1>
+    <div class="container text-center" id="desktop">
+      <div class="row" style="padding-top: 20px">
+        <div class="col-4" style="padding-top: 40px">
+          <h2><i>ABOUT US</i></h2>
+        </div>
+        <div class="col-8" style="border-left: 5px solid cornflowerblue">
+          <p>
+            At Modutek Systems, we manufacture & develop modular workstations,
+            institutional, residential and new-age innovations in furniture. In
+            today's fast-moving world, modular furniture provides us with the
+            flexibility of design, building it from scratch to better suit any
+            space constraint and environment.
+          </p>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 20px">
+        <div class="col-8" style="border-right: 5px solid cornflowerblue">
+          <p>
+            Founded in the bustling city of Mumbai with 15 years of experience,
+            Modutek Systems has swiftly risen to prominence as a premier
+            manufacturer of modular furnitures.
+          </p>
+        </div>
+        <div class="col-4" style="padding-top: 20px">
+          <h2><i>OUR JOURNEY</i></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" id="mobile">
+      <h2><i class="mobileView">About Us</i></h2>
+      <p>
+        At Modutek Systems, we manufacture & develop modular workstations,
+        institutional, residential and new-age innovations in furniture. In
+        today's fast-moving world, modular furniture provides us with the
+        flexibility of design, building it from scratch to better suit any space
+        constraint and environment.
+      </p>
+      <h2><i class="mobileView">Our Journey</i></h2>
+      <p>
+        Founded in the bustling city of Mumbai with 15 years of experience,
+        Modutek Systems has swiftly risen to prominence as a premier
+        manufacturer of modular furnitures.
+      </p>
+    </div>
+
+    <h1 id="services" class="text-center">the modular advantage</h1>
+    <h6 class="text-center">
+      Where form follows function, and adaptability coincides with creativity!
+    </h6>
+
+    <div class="container text-center pt-4">
+      <div class="row">
+        <div class="box col-lg-4 col-md-4 col-sm-6 service-box mb-4">
+          <b class="white"><i class="white">Effortless Customization</i></b
+          ><br />
+          <img
+            src="{{ url_for('static', filename='images/customisation-removebg-preview.png') }}"
+          />
+        </div>
+        <div class="box col-lg-4 col-md-4 col-sm-6 service-box mb-4">
+          <b class="white"><i class="white">Space Optimization</i></b
+          ><br />
+          <img src="{{ url_for('static', filename='images/opt.png') }}" />
+        </div>
+        <div class="box col-lg-4 col-md-4 col-sm-6 service-box mb-4">
+          <b class="white"><i class="white">New Age Design</i></b
+          ><br />
+        </div>
+      </div>
+      <div class="row">
+        <div class="box col-lg-4 col-md-4 col-sm-6 service-box mb-4">
+          <b class="white"><i class="white">Endless Possibilities</i></b
+          ><br />
+        </div>
+        <div class="box col-lg-4 col-md-4 col-sm-6 service-box mb-4">
+          <b class="white"><i class="white">Cost Effective Solutions</i></b
+          ><br />
+        </div>
+        <div class="box col-lg-4 col-md-4 col-sm-6 service-box mb-4">
+          <b class="white"><i class="white">trust & Transparency</i></b
+          ><br />
+          <img src="{{ url_for('static', filename='images/trust.png') }}" />
+        </div>
+      </div>
+    </div>
+
+    <div id="kitchen" class="text-center">
+      <h1>modutek kitchens.</h1>
+      <h6>where style meets functionality</h6>
+      <p>
+        <i>
+          Experience the perfect blend of style, flexibility and functionality
+          that transforms <br />
+          your cooking space into a culinary haven. Discover the joy of cooking
+          in an <br />
+          environment tailored just for you!
+        </i>
+      </p>
+
+      <!-- Carousel -->
+      <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="4"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="{{ url_for('static', filename='images/ki1.png') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/ki2.avif') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/ki3.png') }}"
+              alt="loans"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/ki4.jpg') }}"
+              alt="poster"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/ki5.jpg') }}"
+              alt="poster"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo1"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo1"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="living" class="text-center">
+      <h1>modutek living rooms.</h1>
+      <h6>fostering a memorable experience and comfort</h6>
+      <p>
+        <i>
+          We understand the importance of creating a space that reflects your
+          unique personality <br />
+          and adapts to your ever changing needs. Create a space that not only
+          looks stunning but <br />
+          also feels just right for every moment of your life!
+        </i>
+      </p>
+      <!-- Carousel -->
+      <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="{{ url_for('static', filename='images/lv1.jpg') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/lv2.jpg') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/lv3.jpg') }}"
+              alt="loans"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/lv4.jpg') }}"
+              alt="poster"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo2"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo2"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    </div>
+
+    <div id="bedroom" class="text-center">
+      <h1>modutek bedrooms.</h1>
+      <h6>fusion of comfort and homely warmth</h6>
+      <p>
+        <i>
+          Experience the epitome of relaxation and style to create a
+          personalized retreat <br />
+          that evolves with you, embracing the perfect balance of comfort and
+          innovation!
+        </i>
+      </p>
+      <!-- Carousel -->
+      <div id="demo3" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="{{ url_for('static', filename='images/b1.avif') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/b2.avif') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/b3.avif') }}"
+              alt="loans"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/b4.webp') }}"
+              alt="poster"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo3"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo3"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="office" class="text-center">
+      <h1>modutek offices.</h1>
+      <h6>where utility meets intelligence</h6>
+      <p>
+        <i>
+          We understand that a workspace is more than just a place of work.
+          Discover the perfect fusion of <br />
+          innovation and elegance, creating an environment where your team can
+          thrive and ideas can flourish!
+        </i>
+      </p>
+      <!-- Carousel -->
+      <div id="demo4" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/o3.avif') }}"
+              alt="poster"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="{{ url_for('static', filename='images/off1.jpeg') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/o1.avif') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/o2.jpeg') }}"
+              alt="loans"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo4"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo4"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="institute" class="text-center">
+      <h1>modutek institutes.</h1>
+      <h6>where space meets productivity</h6>
+      <p>
+        <i>
+          We believe that education spaces should inspire minds and foster
+          growth. Discover a realm where <br />
+          educational spaces evolve with the demands of the future, nurturing
+          intellectual growth and innovation!
+        </i>
+      </p>
+      <!-- Carousel -->
+      <div id="demo5" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="{{ url_for('static', filename='images/i1.jpg') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/i2.jpg') }}"
+              alt="fixed deposit"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="{{ url_for('static', filename='images/i3.jpeg') }}"
+              alt="loans"
+              class="d-block"
+              style="width: 100%; height: 500px"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo5"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo5"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="success" class="text-center">
+      <h1>modular success</h1>
+      <h6>Let's have a look at our successful projects.</h6>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/persistent.jpg') }}"
+              height="125px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/kalyani_bharat_forge.jpg') }}"
+              height="100px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/finolex.jpg') }}"
+              height="100px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/thermax.png') }}"
+              height="100px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/nalco.png') }}"
+              height="125px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/john_deere.png') }}"
+              height="100px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/fev.png') }}"
+              height="100px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/bliss.png') }}"
+              height="120px"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/pbs.jpg') }}"
+              height="125px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/iim_indore.jpeg') }}"
+              height="100px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/indian.webp') }}"
+              height="100px"
+            />
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-12 p-2">
+            <img
+              src="{{ url_for('static', filename='images/isgec.png') }}"
+              height="120px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <span id="enquiry"></span>
+    <div class="form-area">
+      <div class="container">
+        <div class="row single-form g-0">
+          <div class="col-sm-12 col-lg-6">
+            <div class="left">
+              <h2><span>Contact Us For</span><br />Enquiries</h2>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <div class="right">
+              <i class="fa fa-caret-left"></i>
+              <form action="/submit" method="post">
+                <div class="mb-3">
+                  <label for="exampleInputName" class="form-label">Name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="exampleInputName"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail" class="form-label"
+                    >Email:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="exampleInputEmail"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputQuery" class="form-label"
+                    >Query:</label
+                  >
+                  <textarea
+                    type="password"
+                    class="form-control"
+                    name="message"
+                    id="exampleInputQuery"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer id="end">
+      <div class="container">
+        <div class="row">
+          <div class="footerElements col-lg-3 col-md-3 col-sm-6 text-center">
+            <h3>
+              m*dutek <br />
+              systems.
+            </h3>
+          </div>
+
+          <div class="footerElements col-lg-3 col-md-3 col-sm-6 text-center">
+            <h3>Contact Us</h3>
+            +91 9820045806 / <br />
+            +91 982040179 <br />
+            office@moduteksystems.com
+          </div>
+
+          <div class="footerElements col-lg-3 col-md-3 col-sm-6 text-center">
+            <h3>
+              Connect <br />
+              With Us
+            </h3>
+            <a href="#"><i class="fab fa-facebook fa-2x icon-white"></i></a>
+            <br />
+            <a href="#"><i class="fab fa-twitter fa-2x icon-white"></i></a>
+            <br />
+            <a href="#"><i class="fab fa-instagram fa-2x icon-white"></i></a>
+            <br />
+          </div>
+
+          <div class="footerElements col-lg-3 col-md-3 col-sm-6 text-center">
+            <h3>Quick links</h3>
+            <a href="#home">Home</a> <br />
+            <a href="#kitchen">Kitchen</a> <br />
+            <a href="#living">Living Room</a> <br />
+            <a href="#bedroom">Bedroom</a> <br />
+            <a href="#office">Office</a> <br />
+            <a href="#institute">Instutute</a> <br />
+            <a href="#enquiry">Enquiry</a> <br />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

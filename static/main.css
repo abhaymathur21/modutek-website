@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#home {
+    padding-top: 91px;
+}
+
+.navbar {
+    padding: 10px;
+    z-index: 100;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.box{
+    background-color: cornflowerblue;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #vjnl-logo {
+        width: 225px;
+    }
+
+    .navbar-toggler {
+        margin-left: auto;
+        border: 3px solid cornflowerblue;
+    }
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+h1,
+h4 {
+    color: cornflowerblue;
+}
+
+h2,
+h3 {
+    color: cornflowerblue;
+}
+
+b,
+i {
+    color: cornflowerblue;
+}
+
+.white{
+    color: white;
+}
+
+#about,
+#services,
+#loans,
+#testimonials,
+#enquiry,
+#team {
+    padding-top: 80px;
+}
+
+#desktop {
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
+.mobileView {
+    border-bottom: 3px solid cornflowerblue;
+}
+
+.card {
+    border: white;
+    margin-bottom: 15px;
+}
+
+.card-img-top {
+    border: 2px solid cornflowerblue;
+    height: 135px;
+    width: 135px;
+    margin-top: 15px;
+}
+
+.card-body {
+    height: 132.19px;
+}
+
+#financial {
+    margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+        padding: 20px;
+    }
+
+    #financial {
+        margin-top: -2rem;
+    }
+
+    #team {
+        padding-top: 20px;
+    }
+}
+
+.service-box {
+    color: cornflowerblue;
+    padding-top: 6px;
+    box-shadow: 2px 2px 8px black;
+}
+
+.service-box:hover {
+    animation: bounce 0.5s ease-in-out;
+    opacity: 0.8;
+    box-shadow: 0px 4px 6px cornflowerblue
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.form-area {
+    padding-top: 7%;
+}
+
+.row.single-form {
+    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+    background: cornflowerblue;
+    padding: 155px 93px;
+}
+
+.left h2 {
+    font-family: poppins;
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.left h2 span {
+    font-weight: 100;
+}
+
+.right {
+    padding: 20px 100px;
+    position: relative;
+}
+
+.right i {
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #fff;
+}
+
+.form-control {
+    border: 2px solid #000;
+}
+
+.right button,
+.submitButton {
+    border: none;
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.carousel-item:hover .carousel-caption .submitButton {
+    background-color: cornflowerblue;
+}
+
+.right button:hover {
+    background: cornflowerblue;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .left {
+        padding: 90px 15px;
+        text-align: center;
+    }
+
+    .left h2 {
+        font-size: 25px;
+    }
+
+    .right {
+        padding: 25px;
+    }
+
+    .right i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 45%;
+    }
+
+    .right button {
+        width: 150px;
+        padding: 12px 0;
+    }
+}
+
+footer h3,
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: black;
+}
+
+#end {
+    background-color: cornflowerblue;
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.icon-white {
+    color: white;
+}
+
+.footerElements {
+    padding-bottom: 20px;
+}
