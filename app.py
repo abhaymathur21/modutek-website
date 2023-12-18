@@ -1,12 +1,21 @@
 from flask import Flask, render_template, request, jsonify,redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 import csv
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'  # Use SQLite for simplicity
 db = SQLAlchemy()
 
 csv_file_path = 'database.csv'
+
+# Email configuration for Gmail
+email_host = 'smtp.gmail.com'
+email_port = 587  # TLS port for Gmail
+my_email = 'a21.mathur21@gmail.com'
+my_email_password = 'uuot lkpb viwp nacm'
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -37,8 +46,9 @@ def submit():
 
     update_csv_file(name, email, query)
 
-    # Send a response to the client
-    # return jsonify({'message': 'Data received successfully!'})
+    # Send an email to the provided email address
+    send_email(name, email, query)
+   
     return redirect(url_for('index'))
 
 def update_csv_file(name, email, query):
@@ -49,6 +59,25 @@ def update_csv_file(name, email, query):
 
         # Write a new row to the CSV file
         writer.writerow({'name': name, 'email': email, 'query': query})
+        
+def send_email(name, email, query):
+    # Email content
+    subject = 'Thank you for your submission'
+    body = f'Hello {name},\n\nThank you for submitting your query. We will get back to you soon.\n\nBest regards,\nmodutek'
+
+    # Create a message
+    message = MIMEMultipart()
+    message['From'] = my_email
+    message['To'] = email
+    message['Subject'] = subject
+    message.attach(MIMEText(body, 'plain'))
+
+    # Connect to the SMTP server and send the email
+    with smtplib.SMTP(email_host, email_port) as server:
+        server.starttls()
+        server.login(my_email, my_email_password)
+        server.sendmail(my_email, email, message.as_string())
+
 
 if __name__ == '__main__':
     app.run(debug=True)
